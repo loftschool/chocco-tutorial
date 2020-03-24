@@ -3,6 +3,10 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+
+  &--theme--green {
+    color: $darkGreen;
+  }
 }
 
 .phone-number__icon-elem {
