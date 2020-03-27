@@ -1,9 +1,11 @@
 .features {
   display: flex;
+  z-index: 1;
+  position: relative;
 }
 
 .features__item {
-  margin-right: 38px;
+  margin-right: rem(38px);
 
 
   &:last-child {
