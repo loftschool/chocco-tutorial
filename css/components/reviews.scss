@@ -1,96 +1,100 @@
 .reviews__display {
-  padding: rem(50px) rem(45px) rem(34px);
-  background: #f8faf9 url("../img/decor/drown-berries.png") right top no-repeat;
-  margin-bottom: rem(20px);
+  background: url("../img/decor/drown-berries.png") right top no-repeat #f8faf9;
+  padding: 50px 45px 35px;
+  display: flex;
   overflow: hidden;
   position: relative;
+  margin-bottom: 20px;
 
   @include tablets {
-    padding: rem(57px) 1% rem(29px) rem(10px);
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
   }
 
   &:before {
     content: "";
     display: block;
-    width: rem(90px);
-    height: rem(90px);
-    background: #fff;
-    border-radius: 50%;
     position: absolute;
+    top: -70px;
     left: 50%;
     transform: translateX(-50%);
-    top: rem(-65px);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+
+  }
+}
+
+.reviews__list {
+  position: relative;
+  min-height: 280px;
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: .3s;
+  opacity: 0;
+
+  &.active {
+    position: static;
+    opacity: 1;
+    pointer-events: unset;
   }
 }
 
 .reviews__display-inner {
   display: flex;
-
-  @include tablets {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
 }
 
 .reviews__avatar {
-  width: rem(254px);
-  height: rem(260px);
+  width: 253px;
+  height: 260px;
+  margin-right: 20px;
 
   @include tablets {
-    width: rem(130px);
-    height: rem(132px);
-    margin-bottom: rem(30px);
+    margin-right: 0;
+    margin-bottom: 30px;
   }
 }
 
-.reviews__avatar-img {
-  object-fit: cover;
+.reviews__avatar-pic {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
-.reviews__content {
+.reviews__text {
   flex: 1;
-  margin-left: rem(17px);
-  padding-right: 10%;
-  padding-top: rem(8px);
+  padding-right: 80px;
+  padding-top: 8px;
 
   @include tablets {
-    margin-left: 0;
+    text-align: center;
     padding-right: 0;
     padding-top: 0;
   }
 }
 
 .reviews__title {
-  font-size: rem(30px);
+  font-size: 30px;
   font-weight: bold;
-  margin-bottom: rem(22px);
-  color: black;
-
-  @include tablets {
-    margin-bottom: rem(7px);
-  }
+  margin-bottom: 18px;
+  color: #323232;
 }
 
-.reviews__text {
-  margin-bottom: rem(36px);
-
-  @include tablets {
-    margin-bottom: rem(16px);
-  }
+.reviews__content {
+  margin-bottom: 9px;
 }
 
 .reviews__author {
-  font-size: rem(18px);
+  color: #666666;
   font-weight: bold;
-  color: black;
 }
-
-.reviews__switcher {
-  display: flex;
-  justify-content: center;
-}
-
-.reviews__switcher-item {}
