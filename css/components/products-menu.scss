@@ -8,13 +8,6 @@
 
 .products-menu__item {
   display: flex;
-
-  &.active {
-    .products-menu__content {
-      display: block;
-      max-width: 532px;
-    }
-  }
 }
 
 .products-menu__image {
@@ -65,6 +58,7 @@
   width: 0;
   position: relative;
   overflow: hidden;
+  transition: width .7s;
 }
 
 .products-menu__container {
