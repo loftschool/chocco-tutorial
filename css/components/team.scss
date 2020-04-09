@@ -3,9 +3,10 @@
   justify-content: space-between;
 
   @include tablets {
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     padding: 0 10%;
-    margin-left: -20px;
+    flex-direction: column;
+    align-items: center;
   }
 
   @include phones {
@@ -17,7 +18,8 @@
   flex: 1;
   text-align: center;
   margin-right: 20px;
-  cursor: pointer;
+  max-width: rem(260px);
+  position: relative;
 
   &.active {
     .team__title {
@@ -30,10 +32,8 @@
 
   @include tablets {
     flex: initial;
-    width: calc(100% / 2 - 20px);
-    margin-right: 0px;
-    margin-left: 20px;
     margin-bottom: 35px;
+    margin-right: 0;
   }
 
   @include phones {
@@ -60,7 +60,7 @@
 
 .team__title {
   color: #323232;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 21px;
@@ -77,13 +77,48 @@
     display: block;
     margin-left: 5px;
   }
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.team__title--mobile {
+  margin-bottom: 15px;
+  display: none;
+
+  @include tablets {
+    display: inline-flex;
+  }
+}
+
+.team__content-block {
+  padding-bottom: 5px;
 }
 
 .team__content {
-  height: 0px;
   overflow: hidden;
   transition: height .3s;
+
+  &--hidden--mobile {
+    height: auto;
+    @include tablets {
+      height: 0; 
+    }
+  }
+
+  &--hidden--desktop {
+    height: 0px;
+    top: 100%;
+    position: absolute;
+    @include tablets {
+      position: static;
+      height: auto !important;
+    }
+  }
 }
+
+
 
 .team__content-text {
   font-weight: 300;
