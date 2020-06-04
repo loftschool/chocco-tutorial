@@ -8,21 +8,28 @@
   }
 }
 
-.products-slider__btn {
+.product-slider__arrow {
+  background: url("../../img/icons/arrow.svg") center center no-repeat;
+  background-size: contain;
+  display: block;
+  width: rem(13px);
+  height: rem(28px);
   position: absolute;
   top: 50%;
-  background: transparent;
   transform: translateY(-50%);
+  z-index: 10;
 
-  &--next {
+  &--direction--next {
     right: 0;
   }
 
-  &--prev {
+  &--direction--prev {
     left: 0;
     transform: rotate(-180deg);
   }
 }
+
+
 
 .products-slider__icon {
   width: 14px;

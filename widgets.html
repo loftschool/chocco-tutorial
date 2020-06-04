@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CHOCCO</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
 
@@ -14,7 +18,641 @@
         <section class="section products-section">
           <div class="container">
             <div class="products-slider">
+              <div class="product-slider__arrows">
+                <a href="#" class="product-slider__arrow product-slider__arrow--direction--prev"></a>
+                <a href="#" class="product-slider__arrow product-slider__arrow--direction--next"></a>
+              </div>
               <ul class="products">
+                <li class="products__item product">
+                  <div class="product__container">
+                    <div class="product__col">
+                      <div class="product__image">
+                        <img
+                          src="./img/content/bars-1.png"
+                          class="product__image-elem"
+                          alt="батончик морские водоросли"
+                        />
+                      </div>
+                    </div>
+                    <div class="product__col">
+                      <div class="product__ingredients">
+                        <div class="ingredients">
+                          <div class="ingredients__button">
+                            <div class="ingredients__button-icon">
+                              <img
+                                src="./img/icons/chocolate-bar.svg"
+                                class="ingredients__button-icon-elem"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ingredients__button-text">состав</div>
+                          </div>
+                          <div class="ingredients__dropdown">
+                            <table class="ingredients__table">
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/oat.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text">Овес</span>
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/seaweed.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text"
+                                    >Мор. водоросли</span
+                                  >
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/almond.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text">Миндаль</span>
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/washing-powder.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text"
+                                    >Сухое молоко</span
+                                  >
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/seeds.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text"
+                                    >Тыкв. семечки</span
+                                  >
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/apitherapy.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text"
+                                    >Зам. сахара</span
+                                  >
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/beans.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text"
+                                    >Какао бобы</span
+                                  >
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product__title">
+                        Батончик морские водоросли
+                      </div>
+                      <div class="product__text">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Molestias ipsum autem soluta illo saepe modi
+                          eos, iure doloremque totam, praesentium asperiores!
+                          Repudiandae voluptatem officia esse quasi, tempore
+                          culpa vel incidunt!
+                        </p>
+                      </div>
+                      <table class="product__values">
+                        <tr class="product__values-row">
+                          <td class="product__values-block">
+                            <div class="product__values-title">
+                              Калорийность
+                            </div>
+                            <div class="product__values-amount">120 ккал</div>
+                          </td>
+                          <td class="product__values-block">
+                            <div class="product__values-title">Вес</div>
+                            <div class="product__values-amount">98 грамм</div>
+                          </td>
+                        </tr>
+                        <tr class="product__values-row">
+                          <td class="product__values-block">
+                            <div class="product__values-rub">
+                              140
+                              <img
+                                src="./img/icons/rub.svg"
+                                class="product__values-rub-sign"
+                                alt=""
+                              />
+                            </div>
+                          </td>
+                          <td class="product__values-block">
+                            <a class="btn btn--theme--green">Заказать</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </li>
+                <li class="products__item product">
+                  <div class="product__container">
+                    <div class="product__col">
+                      <div class="product__image">
+                        <img
+                          src="./img/content/bars-1.png"
+                          class="product__image-elem"
+                          alt="батончик морские водоросли"
+                        />
+                      </div>
+                    </div>
+                    <div class="product__col">
+                      <div class="product__ingredients">
+                        <div class="ingredients">
+                          <div class="ingredients__button">
+                            <div class="ingredients__button-icon">
+                              <img
+                                src="./img/icons/chocolate-bar.svg"
+                                class="ingredients__button-icon-elem"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ingredients__button-text">состав</div>
+                          </div>
+                          <div class="ingredients__dropdown">
+                            <table class="ingredients__table">
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/oat.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text">Овес</span>
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/seaweed.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text"
+                                    >Мор. водоросли</span
+                                  >
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/almond.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text">Миндаль</span>
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/washing-powder.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text"
+                                    >Сухое молоко</span
+                                  >
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/seeds.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text"
+                                    >Тыкв. семечки</span
+                                  >
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/apitherapy.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text"
+                                    >Зам. сахара</span
+                                  >
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/beans.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text"
+                                    >Какао бобы</span
+                                  >
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product__title">
+                        Батончик морские водоросли
+                      </div>
+                      <div class="product__text">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Molestias ipsum autem soluta illo saepe modi
+                          eos, iure doloremque totam, praesentium asperiores!
+                          Repudiandae voluptatem officia esse quasi, tempore
+                          culpa vel incidunt!
+                        </p>
+                      </div>
+                      <table class="product__values">
+                        <tr class="product__values-row">
+                          <td class="product__values-block">
+                            <div class="product__values-title">
+                              Калорийность
+                            </div>
+                            <div class="product__values-amount">120 ккал</div>
+                          </td>
+                          <td class="product__values-block">
+                            <div class="product__values-title">Вес</div>
+                            <div class="product__values-amount">98 грамм</div>
+                          </td>
+                        </tr>
+                        <tr class="product__values-row">
+                          <td class="product__values-block">
+                            <div class="product__values-rub">
+                              140
+                              <img
+                                src="./img/icons/rub.svg"
+                                class="product__values-rub-sign"
+                                alt=""
+                              />
+                            </div>
+                          </td>
+                          <td class="product__values-block">
+                            <a class="btn btn--theme--green">Заказать</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </li>
+                <li class="products__item product">
+                  <div class="product__container">
+                    <div class="product__col">
+                      <div class="product__image">
+                        <img
+                          src="./img/content/bars-1.png"
+                          class="product__image-elem"
+                          alt="батончик морские водоросли"
+                        />
+                      </div>
+                    </div>
+                    <div class="product__col">
+                      <div class="product__ingredients">
+                        <div class="ingredients">
+                          <div class="ingredients__button">
+                            <div class="ingredients__button-icon">
+                              <img
+                                src="./img/icons/chocolate-bar.svg"
+                                class="ingredients__button-icon-elem"
+                                alt=""
+                              />
+                            </div>
+                            <div class="ingredients__button-text">состав</div>
+                          </div>
+                          <div class="ingredients__dropdown">
+                            <table class="ingredients__table">
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/oat.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text">Овес</span>
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/seaweed.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text"
+                                    >Мор. водоросли</span
+                                  >
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/almond.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text">Миндаль</span>
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/washing-powder.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text"
+                                    >Сухое молоко</span
+                                  >
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/seeds.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text"
+                                    >Тыкв. семечки</span
+                                  >
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/apitherapy.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text"
+                                    >Зам. сахара</span
+                                  >
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                              <tr class="ingredients__table-row">
+                                <td
+                                  class="ingredients__table-cell ingredients__icon-container"
+                                >
+                                  <img
+                                    src="./img/icons/beans.svg"
+                                    class="ingredients__icon"
+                                  />
+                                </td>
+                                <td
+                                  class="ingredients__table-cell ingredients__text-container"
+                                >
+                                  <span class="ingredients__text"
+                                    >Какао бобы</span
+                                  >
+                                </td>
+                                <td class="ingredients__table-cell">
+                                  <span class="ingredients__text">25г</span>
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="product__title">
+                        Батончик морские водоросли
+                      </div>
+                      <div class="product__text">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Molestias ipsum autem soluta illo saepe modi
+                          eos, iure doloremque totam, praesentium asperiores!
+                          Repudiandae voluptatem officia esse quasi, tempore
+                          culpa vel incidunt!
+                        </p>
+                      </div>
+                      <table class="product__values">
+                        <tr class="product__values-row">
+                          <td class="product__values-block">
+                            <div class="product__values-title">
+                              Калорийность
+                            </div>
+                            <div class="product__values-amount">120 ккал</div>
+                          </td>
+                          <td class="product__values-block">
+                            <div class="product__values-title">Вес</div>
+                            <div class="product__values-amount">98 грамм</div>
+                          </td>
+                        </tr>
+                        <tr class="product__values-row">
+                          <td class="product__values-block">
+                            <div class="product__values-rub">
+                              140
+                              <img
+                                src="./img/icons/rub.svg"
+                                class="product__values-rub-sign"
+                                alt=""
+                              />
+                            </div>
+                          </td>
+                          <td class="product__values-block">
+                            <a class="btn btn--theme--green">Заказать</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </li>
                 <li class="products__item product">
                   <div class="product__container">
                     <div class="product__col">
@@ -229,260 +867,10 @@
             </div>
           </div>
         </section>
-        <section class="section team-section">
-          <div class="container">
-            <div class="section__title">Команда</div>
-            <ul class="team">
-              <li class="team__item">
-                <div class="team__member">
-                  <img
-                    class="team__member-pic"
-                    src="./img/content/boroda.jpg"
-                  />
-                </div>
-                <div class="team__title">Борис Федерович</div>
-                <div class="team__content">
-                  <div class="team__content-block">
-                    <div class="team__occ">Оператор</div>
-                    <div class="team__content-text">
-                      С радостью поможет подобрать батончики и оформить заказ
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="team__item">
-                <div class="team__member">
-                  <img class="team__member-pic" src="./img/content/smile.jpg" />
-                </div>
-                <div class="team__title">Алла Иванова</div>
-                <div class="team__content">
-                  <div class="team__content-block">
-                    <div class="team__occ">Оператор</div>
-                    <div class="team__content-text">
-                      С радостью поможет подобрать батончики и оформить заказ
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="team__item">
-                <div class="team__member">
-                  <img
-                    class="team__member-pic"
-                    src="./img/content/yellow.jpg"
-                  />
-                </div>
-                <div class="team__title">Кирилл Матросов</div>
-                <div class="team__content">
-                  <div class="team__content-block">
-                    <div class="team__occ">Оператор</div>
-                    <div class="team__content-text">
-                      С радостью поможет подобрать батончики и оформить заказ
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="team__item">
-                <div class="team__member">
-                  <img
-                    class="team__member-pic"
-                    src="./img/content/serious.jpg"
-                  />
-                </div>
-                <div class="team__title">Мила Рыжкова</div>
-                <div class="team__content">
-                  <div class="team__content-block">
-                    <div class="team__occ">Оператор</div>
-                    <div class="team__content-text">
-                      С радостью поможет подобрать батончики и оформить заказ
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="section products-menu-section">
-          <h1 class="section__title products-menu-section__title">Меню</h1>
-          <ul class="products-menu">
-            <li class="products-menu__item active">
-              <a class="products-menu__title" href="">
-                <img class="products-menu__image" src="./img/bg/coco.jpg" />
-                <div class="products-menu__text">Батончики с молоком</div></a
-              >
-              <div class="products-menu__content">
-                <div class="products-menu__container">
-                  <button class="products-menu__close" type="button">
-                    <img
-                      class="products-menu__close-icon"
-                      src="./img/icons/close.svg"
-                    />
-                  </button>
-                  <div class="products-menu__content-text">
-                    Рекомендуем употреблять батончики вместе с кокосовым или
-                    миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё
-                    хотеть от жизни? Батончик – он твой лучший друг и радует
-                    всех вокруг. Как классно, что можно питаться полезно и
-                    вкусно, а не как попало. Бабуля, конечно, за такую еду не
-                    похвалит, но кто её будет спрашивать – никто. Надо бы,
-                    кстати, бабулю поздравить с днём Победы.
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="products-menu__item">
-              <a class="products-menu__title" href="">
-                <img
-                  class="products-menu__image"
-                  src="./img/bg/breakfast.jpg"
-                />
-                <div class="products-menu__text">С медом и фруктами</div></a
-              >
-              <div class="products-menu__content">
-                <div class="products-menu__container">
-                  <button class="products-menu__close" type="button">
-                    <img
-                      class="products-menu__close-icon"
-                      src="./img/icons/close.svg"
-                    />
-                  </button>
-                  <div class="products-menu__content-text">
-                    Рекомендуем употреблять батончики вместе с кокосовым или
-                    миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё
-                    хотеть от жизни? Батончик – он твой лучший друг и радует
-                    всех вокруг. Как классно, что можно питаться полезно и
-                    вкусно, а не как попало. Бабуля, конечно, за такую еду не
-                    похвалит, но кто её будет спрашивать – никто. Надо бы,
-                    кстати, бабулю поздравить с днём Победы.
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="products-menu__item">
-              <a class="products-menu__title" href="">
-                <img class="products-menu__image" src="./img/bg/berries.jpg" />
-                <div class="products-menu__text">Дикие ягоды</div></a
-              >
-              <div class="products-menu__content">
-                <div class="products-menu__container">
-                  <button class="products-menu__close" type="button">
-                    <img
-                      class="products-menu__close-icon"
-                      src="./img/icons/close.svg"
-                    />
-                  </button>
-                  <div class="products-menu__content-text">
-                    Рекомендуем употреблять батончики вместе с кокосовым или
-                    миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё
-                    хотеть от жизни? Батончик – он твой лучший друг и радует
-                    всех вокруг. Как классно, что можно питаться полезно и
-                    вкусно, а не как попало. Бабуля, конечно, за такую еду не
-                    похвалит, но кто её будет спрашивать – никто. Надо бы,
-                    кстати, бабулю поздравить с днём Победы.
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section class="section reviews">
-          <div class="container">
-            <div class="section__title">Отзывы</div>
-            <div class="reviews__display">
-              <ul class="reviews__list">
-                <li class="reviews__item active">
-                  <div class="reviews__display-inner">
-                    <div class="reviews__avatar">
-                      <img
-                        class="reviews__avatar-pic"
-                        src="./img/content/beauty.jpg"
-                      />
-                    </div>
-                    <div class="reviews__text">
-                      <div class="reviews__title">Лучший перекус</div>
-                      <div class="reviews__content">
-                        Я ем малыми порциями, но часто. Это повышает мою
-                        продуктивность в разы. В течение дня сижу за компьютером
-                        и часто отходить в кафе или на кухню просто не могу себе
-                        позволить. А батончик – он всегда под рукой. Это приятно
-                        и удобно.
-                      </div>
-                      <div class="reviews__author">Алёна Хмельницкая</div>
-                    </div>
-                  </div>
-                </li>
-                <li class="reviews__item">
-                  <div class="reviews__display-inner">
-                    <div class="reviews__avatar">
-                      <img
-                        class="reviews__avatar-pic"
-                        src="./img/content/ginger.jpg"
-                      />
-                    </div>
-                    <div class="reviews__text">
-                      <div class="reviews__title">Лучший перекус</div>
-                      <div class="reviews__content">
-                        Я ем малыми порциями, но часто. Это повышает мою
-                        продуктивность в разы. В течение дня сижу за компьютером
-                        и часто отходить в кафе или на кухню просто не могу себе
-                        позволить. А батончик – он всегда под рукой. Это приятно
-                        и удобно.
-                      </div>
-                      <div class="reviews__author">Алёна Хмельницкая</div>
-                    </div>
-                  </div>
-                </li>
-                <li class="reviews__item">
-                  <div class="reviews__display-inner">
-                    <div class="reviews__avatar">
-                      <img
-                        class="reviews__avatar-pic"
-                        src="./img/content/guy.jpg"
-                      />
-                    </div>
-                    <div class="reviews__text">
-                      <div class="reviews__title">Лучший перекус</div>
-                      <div class="reviews__content">
-                        Я ем малыми порциями, но часто. Это повышает мою
-                        продуктивность в разы. В течение дня сижу за компьютером
-                        и часто отходить в кафе или на кухню просто не могу себе
-                        позволить. А батончик – он всегда под рукой. Это приятно
-                        и удобно.
-                      </div>
-                      <div class="reviews__author">Алёна Хмельницкая</div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <ul class="reviews-switcher">
-              <li class="reviews-switcher__item active">
-                <a class="reviews-switcher__link">
-                  <img
-                    src="./img/content/beauty.jpg"
-                    class="reviews-switcher__pic"
-                  />
-                </a>
-              </li>
-              <li class="reviews-switcher__item">
-                <a class="reviews-switcher__link">
-                  <img
-                    src="./img/content/ginger.jpg"
-                    class="reviews-switcher__pic"
-                  />
-                </a>
-              </li>
-              <li class="reviews-switcher__item">
-                <a class="reviews-switcher__link">
-                  <img
-                    src="./img/content/guy.jpg"
-                    class="reviews-switcher__pic"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="./slider.js"></script>
   </body>
 </html>
