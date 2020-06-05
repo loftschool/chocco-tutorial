@@ -1,22 +1,3 @@
-// .modal {
-//   position: fixed;
-//   display: flex;
-//   background: rgba(51, 53, 55, .99);
-//   align-items: center;
-//   justify-content: center;
-//   opacity: 0;
-//   transition: opacity .3s;
-//   left: -9999px;
-
-//   &.active {
-//     opacity: 1;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//   }
-// }
-
 .modal {
   display: none;
 
@@ -41,6 +22,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.input-error {
+  border-color: hotpink;
 }
 
 .modal__content {

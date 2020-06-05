@@ -1,3 +1,16 @@
+const validateFields = (form, fieldsArray) => {
+  fieldsArray.forEach((field) => {
+    field.removeClass("input-error");
+    if (field.val().trim() === "") {
+      field.addClass("input-error");
+    }
+  });
+
+  const errorFields = form.find(".input-error");
+
+  return errorFields.length === 0;
+};
+
 $(".form").submit((e) => {
   e.preventDefault();
 
@@ -12,16 +25,9 @@ $(".form").submit((e) => {
 
   modal.removeClass("error-modal");
 
-  [name, phone, comment, to].forEach((field) => {
-    field.removeClass("input-error");
-    if (field.val().trim() === "") {
-      field.addClass("input-error");
-    }
-  });
+  const isValid = validateFields(form, [name, phone, comment, to]);
 
-  const errorFields = $(".input-error");
-
-  if (errorFields.length === 0) {
+  if (isValid) {
     const request = $.ajax({
       url: "https://webdev-api.loftschool.com/sendmail",
       method: "post",
@@ -31,6 +37,7 @@ $(".form").submit((e) => {
         comment: comment.val(),
         to: to.val(),
       },
+      error: (data) => {},
     });
 
     request.done((data) => {
@@ -52,7 +59,7 @@ $(".form").submit((e) => {
   }
 });
 
-$(".app-close-modal").click((e) => {
+$(".app-submit-btn").click((e) => {
   e.preventDefault();
 
   $.fancybox.close();
