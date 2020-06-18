@@ -1,8 +1,10 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
-//breakpoints
+//z-indexes
+$z-fixed-menu: 100;
 
+//breakpoints
 $tablets: 768px;
 $phones: 480px;
 
@@ -43,3 +45,4 @@ $darkGreen: #0b4d3c;
 @import "components/footer";
 @import "components/socials";
 @import "components/contacts";
+@import "components/fixed-menu"
