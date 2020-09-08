@@ -4,6 +4,11 @@
   right: 3%;
   z-index: $z-fixed-menu;
   color: #fff;
+  transition: .3s;
+
+  @include tablets {
+    display: none;
+  }
 
   &--shadowed {
     color: #000;
@@ -27,6 +32,10 @@
   border: 1px solid transparent;
   display: block;
   position: relative;
+
+  &:hover {
+    border-color: currentColor;
+  }
 
   &:before {
     content: "";
