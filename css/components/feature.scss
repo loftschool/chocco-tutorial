@@ -1,5 +1,11 @@
 .feature {
   display: flex;
+  align-items: center;
+}
+
+.feature__icon-symbol {
+  width: 45px;
+  fill: #c6f7ff;
 }
 
 .feature__icon {

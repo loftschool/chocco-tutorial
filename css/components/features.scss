@@ -2,11 +2,11 @@
   display: flex;
   z-index: 1;
   position: relative;
+  align-items: flex-start;
 }
 
 .features__item {
   margin-right: rem(38px);
-
 
   &:last-child {
     margin-right: 0;

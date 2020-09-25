@@ -7,7 +7,18 @@
 
   &--theme--green {
     color: $darkGreen;
+
+    .phone-number__icon {
+      fill: $darkGreen;
+    }
   }
+}
+
+.phone-number__icon {
+  margin-right: 10px;
+  width: 12px;
+  height: 12px;
+  fill: #fff;
 }
 
 .phone-number__icon {

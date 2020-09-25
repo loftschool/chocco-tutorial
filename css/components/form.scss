@@ -75,6 +75,10 @@
   display: flex;
   flex-wrap: wrap;
 
+  .radio {
+    margin-bottom: 10px;
+  }
+
   @include phones {
     justify-content: center;
   }

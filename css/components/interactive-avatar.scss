@@ -1,13 +1,12 @@
 .interactive-avatar {
   width: rem(80px);
   height: rem(80px);
-  border: rem(6px) solid transparent;
-  border-radius: 50%;
-  overflow: hidden;
   position: relative;
 
   &--active {
-    border-color: #0f5a47;
+    .interactive-avatar__link {
+      border-color: #0f5a47;
+    }
   }
 }
 
@@ -18,6 +17,9 @@
   bottom: 0;
   right: 0;
   display: block;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .interactive-avatar__img {
