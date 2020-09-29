@@ -5,6 +5,24 @@
   @include tablets {
     display: none;
   }
+
+  &--vertical {
+    @include tablets {
+      display: block;
+    }
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+
+    .menu__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu__item {
+      margin-right: 0;
+    }
+  }
 }
 
 
