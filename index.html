@@ -1037,66 +1037,131 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>        
 
       <section class="section reviews-section">
         <div class="container">
-          <h2 class="section__title">Отзывы</h2>
-          <div class="reviews">
-            <div class="reviews__display">
-              <div class="reviews__display-inner">
-                <div class="reviews__avatar">
-                  <img
+          <div class="section__title">Отзывы</div>
+          <div class="reviews__display">
+            <ul class="reviews__list">
+              <li class="reviews__item active" data-linked-with="one">
+                <div class="reviews__display-inner">
+                  <div class="reviews__avatar">
+                    <img
+                      class="reviews__avatar-pic"
                       src="./img/content/beauty.jpg"
-                      alt=""
-                      class="reviews__avatar-img"
                     />
                   </div>
-                <article class="reviews__content">
-                  <h3 class="reviews__title">Лучший перекус</h3>
                   <div class="reviews__text">
-                    <p>
-                      Я ем малыми порциями, но часто. Это повышает мою
-                      продуктивность в разы. В течение дня сижу за компьютером
-                      и часто отходить в кафе или на кухню просто не могу себе
-                      позволить. А батончик – он всегда под рукой. Это приятно
-                      и удобно.
-                    </p>
+                    <div class="reviews__title">Лучший перекус</div>
+                    <div class="reviews__content">
+                      <p>
+                        Я ем малыми порциями, но часто. Это повышает мою
+                        продуктивность в разы. В течение дня сижу за
+                        компьютером и часто отходить в кафе или на кухню
+                        просто не могу себе позволить. А батончик – он всегда
+                        под рукой. Это приятно и удобно.
+                      </p>
+                    </div>
+                    <div class="reviews__author">Алёна Хмельницкая</div>
                   </div>
-                  <div class="reviews__author">Алена Хмельницкая</div>
-                </article>
-              </div>
-            </div>
-            <ul class="reviews__switcher">
-              <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                <a href="#" class="interactive-avatar__link">
-                  <img
-                      src="./img/content/beauty.jpg"
-                      alt="black hair girl"
-                      class="interactive-avatar__img"
-                    />
-                  </a>
+                </div>
               </li>
-              <li class="reviews__switcher-item interactive-avatar">
-                <a href="#" class="interactive-avatar__link">
-                  <img
-                      src="./img/content/beauty.jpg"
-                      alt="black hair girl"
-                      class="interactive-avatar__img"
+              <li class="reviews__item" data-linked-with="two">
+                <div class="reviews__display-inner">
+                  <div class="reviews__avatar">
+                    <img
+                      class="reviews__avatar-pic"
+                      src="./img/content/ginger.jpg"
                     />
-                  </a>
+                  </div>
+                  <div class="reviews__text">
+                    <div class="reviews__title">Лучший перекус 2</div>
+                    <div class="reviews__content">
+                      <p>
+                        Я ем малыми порциями, но часто. Это повышает мою
+                        продуктивность в разы. В течение дня сижу за
+                        компьютером и часто отходить в кафе или на кухню
+                        просто не могу себе позволить. А батончик – он всегда
+                        под рукой. Это приятно и удобно.
+                      </p>
+                      <p>
+                        Я ем малыми порциями, но часто. Это повышает мою
+                        продуктивность в разы. В течение дня сижу за
+                        компьютером и часто отходить в кафе или на кухню
+                        просто не могу себе позволить. А батончик – он всегда
+                        под рукой. Это приятно и удобно.
+                      </p>
+                    </div>
+                    <div class="reviews__author">Алёна Хмельницкая</div>
+                  </div>
+                </div>
               </li>
-              <li class="reviews__switcher-item interactive-avatar">
-                <a href="#" class="interactive-avatar__link">
-                  <img
-                      src="./img/content/beauty.jpg"
-                      alt="black hair girl"
-                      class="interactive-avatar__img"
+              <li class="reviews__item" data-linked-with="three">
+                <div class="reviews__display-inner">
+                  <div class="reviews__avatar">
+                    <img
+                      class="reviews__avatar-pic"
+                      src="./img/content/guy.jpg"
                     />
-                  </a>
+                  </div>
+                  <div class="reviews__text">
+                    <div class="reviews__title">Лучший перекус 3</div>
+                    <div class="reviews__content">
+                      <p>
+                        Я ем малыми порциями, но часто. Это повышает мою
+                        продуктивность в разы. В течение дня сижу за
+                        компьютером и часто отходить в кафе или на кухню
+                        просто не могу себе позволить. А батончик – он всегда
+                        под рукой. Это приятно и удобно.
+                      </p>
+                      <p>
+                        Я ем малыми порциями, но часто. Это повышает мою
+                        продуктивность в разы. В течение дня сижу за
+                        компьютером и часто отходить в кафе или на кухню
+                        просто не могу себе позволить. А батончик – он всегда
+                        под рукой. Это приятно и удобно.
+                      </p>
+                      <p>
+                        Я ем малыми порциями, но часто. Это повышает мою
+                        продуктивность в разы. В течение дня сижу за
+                        компьютером и часто отходить в кафе или на кухню
+                        просто не могу себе позволить. А батончик – он всегда
+                        под рукой. Это приятно и удобно.
+                      </p>
+                    </div>
+                    <div class="reviews__author">Алёна Хмельницкая</div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
+          <ul class="reviews-switcher">
+            <li class="reviews-switcher__item active">
+              <a class="reviews-switcher__link" data-open="one">
+                <img
+                  src="./img/content/beauty.jpg"
+                  class="reviews-switcher__pic"
+                />
+              </a>
+            </li>
+            <li class="reviews-switcher__item">
+              <a class="reviews-switcher__link" data-open="two">
+                <img
+                  src="./img/content/ginger.jpg"
+                  class="reviews-switcher__pic"
+                />
+              </a>
+            </li>
+            <li class="reviews-switcher__item">
+              <a class="reviews-switcher__link" data-open="three">
+                <img
+                  src="./img/content/guy.jpg"
+                  class="reviews-switcher__pic"
+                />
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -1293,5 +1358,6 @@
   <script src="./scripts/menu.js"></script>
   <script src="./scripts/acco.js"></script>
   <script src="./scripts/modal.js"></script>
+  <script src="./scripts/tabs.js"></script>
 </body>
 </html>
