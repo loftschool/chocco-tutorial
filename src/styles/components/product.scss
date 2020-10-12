@@ -54,7 +54,7 @@
   }
 
   &:before {
-    content: url("../img/decor/leaf-1.png");
+    content: url("./images/decor/leaf-1.png");
     width: rem(75px);
     height: rem(92px);
     top: 23%;
@@ -62,7 +62,7 @@
   }
 
   &:after {
-    content: url("../img/decor/leaf-2.png");
+    content: url("./images/decor/leaf-2.png");
     width: rem(99px);
     height: rem(73px);
     right: 12%;

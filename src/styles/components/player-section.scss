@@ -13,13 +13,13 @@
   }
 
   &::before {
-    content: url("../img/decor/corner-leaf.png");
+    content: url("./images/decor/corner-leaf.png");
     bottom: rem(-48px);
     left: rem(-121px);
   }
 
   &::after {
-    content: url("../img/decor/blured-leaf.png");
+    content: url("./images/decor/blured-leaf.png");
     top: rem(-45px);
     right: rem(-80px);
   }
