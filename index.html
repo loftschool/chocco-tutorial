@@ -14,7 +14,7 @@
   <div class="wrapper">
     <div class="maincontent">
 
-      <section class="hero">
+      <section data-sidemenu-theme="white" data-section-id="hero" class="hero">
         <div class="container hero__container">
           <header class="header">
             <img src="./img/logo.png" alt="chocco logo" class="logo" />
@@ -94,7 +94,7 @@
         </div>
       </section>
 
-      <section class="section benefits-section">
+      <section data-sidemenu-theme="black"  data-section-id="benefits" class="section benefits-section">
         <div class="container">
           <div class="headline">
             <h2 class="section__title headline__title">Почему chocco?</h2>
@@ -162,7 +162,7 @@
         </div>
       </section>
 
-      <section class="section products-section">
+      <section data-sidemenu-theme="black"  data-section-id="products" class="section products-section">
         <div class="container">
           <div class="products-slider">
             <div class="product-slider__arrows">
@@ -875,7 +875,7 @@
         </div>
       </section>
 
-      <section class="section team-section">
+      <section data-sidemenu-theme="black" data-section-id="team" class="section team-section">
         <div class="container">
           <div class="section__title">Команда</div>
           <ul class="team team--version--desktop">
@@ -1039,7 +1039,7 @@
         </div>
       </section>        
 
-      <section class="section products-menu-section">
+      <section data-sidemenu-theme="white" data-section-id="products" class="section products-menu-section">
         <h1 class="section__title products-menu-section__title">Меню</h1>
         <ul class="products-menu">
           <li class="products-menu__item">
@@ -1120,7 +1120,7 @@
         </ul>
       </section>
 
-      <section class="section reviews-section">
+      <section data-sidemenu-theme="black" data-section-id="reviews" class="section reviews-section">
         <div class="container">
           <div class="section__title">Отзывы</div>
           <div class="reviews__display">
@@ -1246,7 +1246,7 @@
         </div>
       </section>
 
-      <section class="section player-section">
+      <section data-sidemenu-theme="black" data-section-id="player" class="section player-section">
         <div class="container">
           <h2 class="section__title">Как мы работаем</h2>
           <div class="player-section__container">
@@ -1270,7 +1270,7 @@
         </div>
       </section>
 
-      <section class="section order-section section--font-color--green">
+      <section data-sidemenu-theme="white" data-section-id="order" class="section order-section section--font-color--green">
         <div class="container">
           <h2 class="section__title">Закажите доставку</h2>
           <form class="form">
@@ -1357,7 +1357,7 @@
         </div>
       </section>
 
-      <section class="section map-section">
+      <section data-sidemenu-theme="black" data-section-id="contacts" class="section map-section">
         <div id="map"></div>
         <footer class="footer">
           <div class="container footer__container">
@@ -1413,6 +1413,37 @@
       </section>
     </div>
   </div>
+  <nav class="fixed-menu">
+    <ul class="fixed-menu__list">
+      <li class="fixed-menu__item fixed-menu__item--active">
+        <a href="" data-scroll-to="hero" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" data-scroll-to="benefits"  class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" data-scroll-to="products" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href="" data-scroll-to="team" class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href=""  data-scroll-to="products"class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href=""  data-scroll-to="reviews"class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href=""  data-scroll-to="player"class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href=""  data-scroll-to="order"class="fixed-menu__link"></a>
+      </li>
+      <li class="fixed-menu__item">
+        <a href=""  data-scroll-to="contacts"class="fixed-menu__link"></a>
+      </li>
+    </ul>
+  </nav>
   <div id="modal" class="modal">
     <div class="modal__container">
       <div class="modal__content">
@@ -1461,6 +1492,8 @@
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
   <script src="scripts/map.js"></script> 
   <script src="scripts/slider.js"></script>
   <script src="./scripts/menu.js"></script>
@@ -1468,6 +1501,7 @@
   <script src="./scripts/modal.js"></script>
   <script src="./scripts/tabs.js"></script>
   <script src="./scripts/menu-acco.js"></script>
-  <script src="./scripts/player.js"></script>
+  <script src="./scripts/player.js"></script> 
+  <script src="./scripts/ops.js"></script>
 </body>
 </html>

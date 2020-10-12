@@ -3,3 +3,4 @@ css/main.css
 .sass-cache
 prepros-6.config
 .idea
+node_modules

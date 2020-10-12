@@ -1,6 +1,9 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+//z-indexes
+$z-fixed-menu: 100;
+
 //breakpoints
 
 $tablets: 768px;
@@ -56,4 +59,5 @@ $darkGreen: #0b4d3c;
 @import "components/products-menu.scss";
 @import "components/player-section.scss";
 @import "components/player.scss";
+@import "components/fixed-menu.scss";
 
