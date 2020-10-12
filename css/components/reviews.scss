@@ -52,6 +52,11 @@
 
 .reviews__display-inner {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .reviews__avatar {

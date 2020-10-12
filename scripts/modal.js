@@ -1,5 +1,4 @@
 const validateFields = (form, fieldsArray) => {
-  console.log(fieldsArray);
   fieldsArray.forEach((field) => {
     field.removeClass("input-error");
     if (field.val().trim() === "") {
@@ -62,6 +61,14 @@ $(".form").submit((e) => {
 
 $(".app-submit-btn").click((e) => {
   e.preventDefault();
+  const form = $('form');
+  const name = form.find("[name='name']");
+  const phone = form.find("[name='phone']");
+  const comment = form.find("[name='comment']")
 
+  comment.val('');
+  name.val("")
+  phone.val("")
+  
   $.fancybox.close();
 });
