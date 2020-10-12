@@ -1,5 +1,5 @@
 .products__item {
-  padding-left: 65px;
+  padding-left: rem(65px);
 
   @include tablets {
     padding-left: 0;

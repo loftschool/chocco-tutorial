@@ -20,14 +20,14 @@
 .fullscreen-menu__close {
   display: block;
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: rem(25px);
+  right: rem(25px);
 }
 
 
 .fullscreen-menu__close-icon{
-  width: 18px;
-  height: 18px;
+  width: rem(18px);
+  height: rem(18px);
   fill: #c2c2c3;
 }
 

@@ -3,8 +3,8 @@
 }
 
 .player-section__container {
-  max-width: 660px;
-  height: 405px; 
+  max-width: rem(660px);
+  height: rem(405px); 
   position: relative;
   margin: 0 auto;
 
@@ -14,13 +14,13 @@
 
   &::before {
     content: url("../img/decor/corner-leaf.png");
-    bottom: -48px;
-    left: -121px;
+    bottom: rem(-48px);
+    left: rem(-121px);
   }
 
   &::after {
     content: url("../img/decor/blured-leaf.png");
-    top: -45px;
-    right: -80px;
+    top: rem(-45px);
+    right: rem(-80px);
   }
 }

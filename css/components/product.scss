@@ -8,7 +8,7 @@
 }
 
 .product__ingredients {
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 
   @include tablets {
     display: none;
@@ -27,7 +27,7 @@
     margin-right: 0;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: rem(60px);
     text-align: center;
 
     &:last-child {
@@ -44,7 +44,7 @@
   position: relative;
 
   @include tablets {
-    height: 300px;
+    height: rem(300px);
   }
 
   &:before,
@@ -55,16 +55,16 @@
 
   &:before {
     content: url("../img/decor/leaf-1.png");
-    width: 75px;
-    height: 92px;
+    width: rem(75px);
+    height: rem(92px);
     top: 23%;
     left: -13%;
   }
 
   &:after {
     content: url("../img/decor/leaf-2.png");
-    width: 99px;
-    height: 73px;
+    width: rem(99px);
+    height: rem(73px);
     right: 12%;
     bottom: -5%;
   }
@@ -77,9 +77,9 @@
 }
 
 .product__title {
-  font-size: 36px;
+  font-size: rem(36px);
   font-weight: bold;
-  margin-bottom: 2px;
+  margin-bottom: rem(2px);
   color: #0d0d0d;
   text-transform: uppercase;
 
@@ -89,22 +89,23 @@
 
   @include phones {
     padding: 0;
+    font-size: rem(30px);
   }
 }
 
 .product__text {
-  margin-bottom: 23px;
+  margin-bottom: rem(23px);
 }
 
 .product__values-rub-sign {
-  height: 30px;
-  width: 20px;
+  height: rem(30px);
+  width: rem(20px);
   margin-left: rem(9px);
   margin-top: rem(13px);
 }
 
 .product__values-row {
-  margin-bottom: 12px;
+  margin-bottom: rem(12px);
 
   &:last-child {
     margin-bottom: 0;
@@ -113,7 +114,7 @@
 
 .product__values-block {
   &:first-child {
-    padding-right: 30px;
+    padding-right: rem(30px);
   }
 }
 
@@ -124,7 +125,7 @@
 
 .product__values-rub {
   color: #0d0d0d;
-  font-size: 60px;
+  font-size: rem(60px);
   display: flex;
   align-items: center;
 }

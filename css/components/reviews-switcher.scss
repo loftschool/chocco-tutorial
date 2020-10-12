@@ -5,11 +5,11 @@
 }
 
 .reviews-switcher__item {
-  width: 80px;
-  height: 80px;
+  width: rem(80px);
+  height: rem(80px);
   border-radius: 50%;
   overflow: hidden;
-  border: 6px solid transparent;
+  border: rem(6px) solid transparent;
   position: relative;
   cursor: pointer;
 

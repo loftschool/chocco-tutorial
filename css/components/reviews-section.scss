@@ -14,4 +14,16 @@
     bottom: rem(-90px);
     left: 0;
   }
+
+  @include phones {
+    background: none;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 }

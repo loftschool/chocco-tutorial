@@ -10,20 +10,24 @@
   }
 
   @include phones {
-    margin-left: -70px;
+    margin-left: rem(-70px);
   }
 }
 
 .team--version--mobile {
   display: none;
+  padding: 0;
+  justify-content: center;
+  margin-left: 0;
 
   @include tablets {
     display: flex;
   }
 
   .team__item {
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
   }
+  
 }
 
 .team--version--desktop {
@@ -41,7 +45,7 @@
 .team__item {
   flex: 1;
   text-align: center;
-  margin-right: 20px;
+  margin-right: rem(20px);
   max-width: rem(260px);
   position: relative;
 
@@ -56,13 +60,14 @@
 
   @include tablets {
     flex: initial;
-    margin-bottom: 35px;
+    margin-bottom: rem(35px);
     margin-right: 0;
   }
 
   @include phones {
-    width: calc(100% / 2 - 70px);
-    margin-left: 70px;
+    // width: calc(100% / 2 - 70px);
+    width: auto;
+    // margin-left: rem(70px);
   }
 
   &:last-child {
@@ -72,8 +77,8 @@
 
 
 .team__member {
-  height: 288px;
-  margin-bottom: 20px;
+  height: rem(288px);
+  margin-bottom: rem(20px);
 }
 
 .team__member-pic {
@@ -87,26 +92,26 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 21px;
+  font-size: rem(21px);
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 
   &:after {
     content: "";
     width: 0;
     height: 0;
     border: 0 solid transparent;
-    border-right-width: 4px;
-    border-left-width: 4px;
-    border-top: 6px solid black;
+    border-right-width: rem(4px);
+    border-left-width: rem(4px);
+    border-top: rem(6px) solid black;
     border-bottom: 0;
     display: block;
-    margin-left: 5px;
+    margin-left: rem(5px);
   }
 }
 
 .team__content-block {
-  padding-bottom: 5px;
+  padding-bottom: rem(5px);
 }
 
 .team__content {
