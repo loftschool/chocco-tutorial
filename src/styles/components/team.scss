@@ -18,8 +18,8 @@
   display: none;
   padding: 0;
   justify-content: center;
-  margin-left: 0;
-
+  margin-left: 0 !important;
+ 
   @include tablets {
     display: flex;
   }

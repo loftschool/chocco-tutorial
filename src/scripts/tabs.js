@@ -4,11 +4,11 @@ const findBlockByAlias = (alias) => {
   });
 };
 
-$(".reviews-switcher__link").click((e) => {
+$(".reviews-switcher__item").click((e) => {
   e.preventDefault();
 
   const $this = $(e.currentTarget);
-  const target = $this.attr("data-open");
+  const target = $this.find('.reviews-switcher__link').attr("data-open");
   const itemToShow = findBlockByAlias(target);
   const curItem = $this.closest(".reviews-switcher__item");
 

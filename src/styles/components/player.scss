@@ -28,6 +28,7 @@
 }
 
 .player__wrapper {
+  height: 100%;
   &.active .player__splash {
     display: none;
   }
