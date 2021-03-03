@@ -74,20 +74,33 @@ const onPlayerStateChange = event => {
   5 (видео подают реплики).
    */
   switch (event.data) {
-    case 1: 
+    case 1:
       $('.player__wrapper').addClass('active');
       playerButton.addClass("paused");
       break;
-    case 2: 
+    case 2:
       playerButton.removeClass("paused");
       break;
   }
 };
 
+let dimensions = {
+  width: "660",
+  height: "405"
+}
+
+
+if (window.innerWidth < 600) {
+  dimensions = {
+    width: "660",
+    height: "300"
+  }
+}
+
+
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("yt-player", {
-    height: "405",
-    width: "660",
+    ...dimensions,
     videoId: "7AkbUfZjS5k",
     events: {
       onReady: onPlayerReady,
